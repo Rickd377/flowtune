@@ -1,0 +1,28 @@
+@mixin header($position: unset) {
+  height: $header_height;
+  background-color: $header_bg;
+  width: calc(100% - $header_padding);
+  position: relative;
+  margin-inline: auto;
+  border-radius: 8px;
+
+  @if $position == top {
+    top: $header_padding / 2;
+  } @else if $position == bottom {
+    bottom: $header_padding / 2;
+  }
+}
+
+@mixin flex($justify: center, $align: center, $direction: row, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin grid($columns: 1, $gap: 0) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+}

@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Create Folder Structure",
+      "label": "Create Folder Structu",
       "type": "shell",
       "command": "powershell -Command \"mkdir -p styles/scss/imports; mkdir -p styles/dist/css; mkdir -p js; mkdir -p assets; New-Item -ItemType File index.html -Force; New-Item -ItemType File js/general.js -Force; New-Item -ItemType File styles/scss/style.scss -Force; New-Item -ItemType File styles/scss/imports/_resets.scss -Force; New-Item -ItemType File styles/scss/imports/_variables.scss -Force; New-Item -ItemType File styles/scss/imports/_mixins-keyframes.scss -Force; New-Item -ItemType File js/styles.js -Force\"",
       "group": "build",

@@ -1,0 +1,24 @@
+header {
+  @include header(top);
+  @include grid(1fr 50% 1fr);
+  color: $gray-text;
+
+  .img-container-header {
+    @include flex(start);
+    gap: 5px;
+    margin-left: 15px;
+
+    img {
+      width: 55px;
+      height: 55px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $white-text;
+    }
+  }
+}

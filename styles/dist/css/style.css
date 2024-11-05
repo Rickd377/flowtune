@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, figure, hr, fieldset, legend, button, input, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  min-height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  background-color: #111111;
+}
+
+main {
+  flex: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  height: 85px;
+  background-color: #1a1a1a;
+  width: calc(100% - 20px);
+  position: relative;
+  margin-inline: auto;
+  border-radius: 8px;
+  top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  gap: 0;
+  color: #ccc;
+}
+header .img-container-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  gap: 5px;
+  margin-left: 15px;
+}
+header .img-container-header img {
+  width: 55px;
+  height: 55px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+header .img-container-header p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer {
+  height: 85px;
+  background-color: #1a1a1a;
+  width: calc(100% - 20px);
+  position: relative;
+  margin-inline: auto;
+  border-radius: 8px;
+  bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  gap: 0;
+  color: #ccc;
+}
+footer .profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+footer .profile .img-container-profile {
+  margin-inline: 15px 10px;
+  height: 55px;
+  width: 55px;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+footer .profile .img-container-profile img {
+  width: 45px;
+  height: 45px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
